@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meniu La Verde</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #e8f5e9, #ffffff);
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #2e7d32;
+      color: white;
+      border-bottom: 5px solid #1b5e20;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.2rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    .menu-section {
+      padding: 2rem;
+    }
+
+    .menu-category {
+      margin-bottom: 2rem;
+      animation: slideUp 1s ease-in-out;
+    }
+
+    .menu-category h2 {
+      font-size: 1.8rem;
+      color: #1b5e20;
+      border-bottom: 2px solid #81c784;
+      padding-bottom: 0.5rem;
+    }
+
+    .menu-item {
+      margin: 1rem 0;
+    }
+
+    .menu-item h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .menu-item p {
+      margin: 0.2rem 0 0.5rem;
+      color: #555;
+    }
+
+    .price {
+      float: right;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Verde</h1>
+    <p>Str. Gustului Nr. 12, Craiova • 0723 456 789</p>
+  </header>
+
+  <div class="menu-section">
+    <div class="menu-category">
+      <h2>Aperitive</h2>
+      <div class="menu-item">
+        <h3>Bruschete cu roșii și busuioc <span class="price">18 RON</span></h3>
+        <p>Pâine prăjită, roșii, usturoi, ulei de măsline.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Platou tradițional <span class="price">35 RON</span></h3>
+        <p>Brânzeturi, mezeluri, legume, pâine de casă.</p>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h2>Feluri principale</h2>
+      <div class="menu-item">
+        <h3>Piept de pui cu sos gorgonzola <span class="price">42 RON</span></h3>
+        <p>Cu piure de cartofi și legume sote.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Somon la grătar <span class="price">52 RON</span></h3>
+        <p>Servit cu orez basmati și sos de lămâie.</p>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h2>Deserturi</h2>
+      <div class="menu-item">
+        <h3>Papanași <span class="price">22 RON</span></h3>
+        <p>Cu smântână și dulceață de afine.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Tiramisu <span class="price">18 RON</span></h3>
+        <p>Rețetă autentică italiană.</p>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h2>Băuturi</h2>
+      <div class="menu-item">
+        <h3>Limonadă <span class="price">12 RON</span></h3>
+        <p>Cu miere și mentă.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Coca-Cola / Fanta <span class="price">8 RON</span></h3>
+        <p>330ml</p>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h2>Smootie-uri</h2>
+      <div class="menu-item">
+        <h3>Fructe de pădure <span class="price">15 RON</span></h3>
+        <p>Afine, zmeură, căpșuni, banană.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Tropical <span class="price">15 RON</span></h3>
+        <p>Mango, ananas, portocală, banană.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
