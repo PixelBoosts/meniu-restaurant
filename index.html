@@ -6,75 +6,79 @@
   <title>Meniu La Verde</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: linear-gradient(to right, #e8f5e9, #ffffff);
-      color: #333;
-      animation: fadeIn 1s ease-in;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.imgur.com/T7MFGPU.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #2e2e2e;
     }
 
     header {
       text-align: center;
       padding: 2rem 1rem;
-      background-color: #2e7d32;
+      background-color: rgba(0, 100, 0, 0.8);
       color: white;
-      border-bottom: 5px solid #1b5e20;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 0.2rem;
     }
 
     header p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       margin: 0;
     }
 
     .menu-section {
-      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 3rem;
+      background-color: rgba(255, 255, 255, 0.8);
     }
 
     .menu-category {
-      margin-bottom: 2rem;
-      animation: slideUp 1s ease-in-out;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      border-top: 5px solid #388e3c;
+      animation: fadeIn 1s ease;
     }
 
     .menu-category h2 {
-      font-size: 1.8rem;
-      color: #1b5e20;
-      border-bottom: 2px solid #81c784;
-      padding-bottom: 0.5rem;
+      color: #2e7d32;
+      text-align: center;
+      margin-bottom: 1rem;
     }
 
     .menu-item {
-      margin: 1rem 0;
+      margin-bottom: 1.5rem;
+    }
+
+    .menu-item img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 0.5rem;
     }
 
     .menu-item h3 {
       margin: 0;
-      font-size: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.1rem;
     }
 
     .menu-item p {
-      margin: 0.2rem 0 0.5rem;
+      margin: 0.2rem 0 0;
+      font-size: 0.95rem;
       color: #555;
     }
 
-    .price {
-      float: right;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes slideUp {
-      from { transform: translateY(20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -88,11 +92,13 @@
     <div class="menu-category">
       <h2>Aperitive</h2>
       <div class="menu-item">
-        <h3>Bruschete cu roșii și busuioc <span class="price">18 RON</span></h3>
+        <img src="https://i.imgur.com/8Kh2N9Y.jpg" alt="Bruschete">
+        <h3>Bruschete <span>18 RON</span></h3>
         <p>Pâine prăjită, roșii, usturoi, ulei de măsline.</p>
       </div>
       <div class="menu-item">
-        <h3>Platou tradițional <span class="price">35 RON</span></h3>
+        <img src="https://i.imgur.com/nPM6oQH.jpg" alt="Platou">
+        <h3>Platou tradițional <span>35 RON</span></h3>
         <p>Brânzeturi, mezeluri, legume, pâine de casă.</p>
       </div>
     </div>
@@ -100,23 +106,27 @@
     <div class="menu-category">
       <h2>Feluri principale</h2>
       <div class="menu-item">
-        <h3>Piept de pui cu sos gorgonzola <span class="price">42 RON</span></h3>
-        <p>Cu piure de cartofi și legume sote.</p>
+        <img src="https://i.imgur.com/o6ZsYjv.jpg" alt="Pui gorgonzola">
+        <h3>Pui gorgonzola <span>42 RON</span></h3>
+        <p>Piept de pui cu sos gorgonzola, piure de cartofi.</p>
       </div>
       <div class="menu-item">
-        <h3>Somon la grătar <span class="price">52 RON</span></h3>
-        <p>Servit cu orez basmati și sos de lămâie.</p>
+        <img src="https://i.imgur.com/3RxXOtB.jpg" alt="Somon">
+        <h3>Somon la grătar <span>52 RON</span></h3>
+        <p>Cu orez basmati și sos de lămâie.</p>
       </div>
     </div>
 
     <div class="menu-category">
       <h2>Deserturi</h2>
       <div class="menu-item">
-        <h3>Papanași <span class="price">22 RON</span></h3>
+        <img src="https://i.imgur.com/YMsz7B3.jpg" alt="Papanași">
+        <h3>Papanași <span>22 RON</span></h3>
         <p>Cu smântână și dulceață de afine.</p>
       </div>
       <div class="menu-item">
-        <h3>Tiramisu <span class="price">18 RON</span></h3>
+        <img src="https://i.imgur.com/S0M3ZnH.jpg" alt="Tiramisu">
+        <h3>Tiramisu <span>18 RON</span></h3>
         <p>Rețetă autentică italiană.</p>
       </div>
     </div>
@@ -124,24 +134,14 @@
     <div class="menu-category">
       <h2>Băuturi</h2>
       <div class="menu-item">
-        <h3>Limonadă <span class="price">12 RON</span></h3>
+        <img src="https://i.imgur.com/W7BBnbP.jpg" alt="Limonadă">
+        <h3>Limonadă <span>12 RON</span></h3>
         <p>Cu miere și mentă.</p>
       </div>
       <div class="menu-item">
-        <h3>Coca-Cola / Fanta <span class="price">8 RON</span></h3>
-        <p>330ml</p>
-      </div>
-    </div>
-
-    <div class="menu-category">
-      <h2>Smootie-uri</h2>
-      <div class="menu-item">
-        <h3>Fructe de pădure <span class="price">15 RON</span></h3>
-        <p>Afine, zmeură, căpșuni, banană.</p>
-      </div>
-      <div class="menu-item">
-        <h3>Tropical <span class="price">15 RON</span></h3>
-        <p>Mango, ananas, portocală, banană.</p>
+        <img src="https://i.imgur.com/zo7KuyP.jpg" alt="Sucuri">
+        <h3>Sucuri răcoritoare <span>8 RON</span></h3>
+        <p>Coca-Cola / Fanta, 330ml.</p>
       </div>
     </div>
   </div>
